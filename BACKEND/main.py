@@ -4,13 +4,13 @@ import math
 import httpx
 
 # Estimations
-from BACKEND.utils import estimate_material_type, estimate_density
+from utils import estimate_material_type, estimate_density
 # Others
-from BACKEND.utils import neows_id_to_designation, designation_to_spkid, parse_velocity_from_horizons, get_horizons_state
+from utils import neows_id_to_designation, designation_to_spkid, parse_velocity_from_horizons, get_horizons_state
 # Constants
-from BACKEND.utils import AU_IN_KM
+from utils import AU_IN_KM
 # ENV
-from BACKEND.utils import env
+from utils import env
 
 app = FastAPI()
 origins = [
